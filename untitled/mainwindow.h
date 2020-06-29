@@ -1,3 +1,4 @@
+
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
@@ -20,10 +21,14 @@ public:
 private slots:
     void on_pushButton_go_clicked();
 
+    void on_pushButton_creat_clicked();
+
+    void on_pushButton_select_clicked();
+
 private:
     Ui::MainWindow *ui;
     SecDialog *win2;
+    User _user;
 };
 
 #endif // MAINWINDOW_H
-

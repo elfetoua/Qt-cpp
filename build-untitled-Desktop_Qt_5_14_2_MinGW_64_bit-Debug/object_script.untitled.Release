@@ -1,0 +1,12 @@
+release/country.o
+release/database.o
+release/datbasewin.o
+release/main.o
+release/mainwindow.o
+release/qcustomplot.o
+release/secdialog.o
+release/user.o
+release/moc_Secdialog.o
+release/moc_datbasewin.o
+release/moc_mainwindow.o
+release/moc_qcustomplot.o

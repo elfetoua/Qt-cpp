@@ -1,0 +1,12 @@
+debug/country.o
+debug/database.o
+debug/datbasewin.o
+debug/main.o
+debug/mainwindow.o
+debug/qcustomplot.o
+debug/secdialog.o
+debug/user.o
+debug/moc_Secdialog.o
+debug/moc_datbasewin.o
+debug/moc_mainwindow.o
+debug/moc_qcustomplot.o

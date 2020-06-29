@@ -248,6 +248,7 @@ Makefile: ../untitled/untitled.pro ../../../../Qt/5.14.2/mingw73_64/mkspecs/win3
 		../../../../Qt/5.14.2/mingw73_64/mkspecs/features/yacc.prf \
 		../../../../Qt/5.14.2/mingw73_64/mkspecs/features/lex.prf \
 		../untitled/untitled.pro \
+		../../../../Qt/5.14.2/mingw73_64/lib/Qt5PrintSupport.prl \
 		../../../../Qt/5.14.2/mingw73_64/lib/Qt5Widgets.prl \
 		../../../../Qt/5.14.2/mingw73_64/lib/Qt5Gui.prl \
 		../../../../Qt/5.14.2/mingw73_64/lib/Qt5Sql.prl \
@@ -433,6 +434,7 @@ Makefile: ../untitled/untitled.pro ../../../../Qt/5.14.2/mingw73_64/mkspecs/win3
 ../../../../Qt/5.14.2/mingw73_64/mkspecs/features/yacc.prf:
 ../../../../Qt/5.14.2/mingw73_64/mkspecs/features/lex.prf:
 ../untitled/untitled.pro:
+../../../../Qt/5.14.2/mingw73_64/lib/Qt5PrintSupport.prl:
 ../../../../Qt/5.14.2/mingw73_64/lib/Qt5Widgets.prl:
 ../../../../Qt/5.14.2/mingw73_64/lib/Qt5Gui.prl:
 ../../../../Qt/5.14.2/mingw73_64/lib/Qt5Sql.prl:

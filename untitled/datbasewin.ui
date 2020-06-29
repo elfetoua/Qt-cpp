@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DatbaseWin</class>
+ <widget class="QDialog" name="DatbaseWin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1094</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>941</width>
+     <height>691</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_sort">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>80</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    selection-background-color: #111;
+    selection-color: yellow;
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #565656, stop: 0.1 #525252, stop: 0.5 #4e4e4e, stop: 0.9 #4a4a4a, stop: 1 #464646);
+    border-style: solid;
+    border: 1px solid #1e1e1e;
+    border-radius: 5;
+    padding: 1px 0px 1px 20px;
+}
+
+
+QComboBox:hover, QPushButton:hover
+{
+    border: 1px solid yellow;
+    color: white;
+}
+
+QComboBox:editable {
+    background: red;
+    color: pink;
+}
+
+QComboBox:on
+{
+    padding-top: 0px;
+    padding-left: 0px;
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2d2d2d, stop: 0.1 #2b2b2b, stop: 0.5 #292929, stop: 0.9 #282828, stop: 1 #252525);
+    selection-background-color: #ffaa00;
+}
+
+QComboBox:!on
+{
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #666, stop: 0.1 #555, stop: 0.5 #555, stop: 0.9 #444, stop: 1 #333);
+}
+
+QComboBox QAbstractItemView
+{
+    border: 2px solid darkgray;
+    color: black;
+    selection-background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #111, stop: 1 #333);
+}
+
+QComboBox::drop-down
+{
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     color: white;
+     border-left-width: 0px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+     padding-left: 10px;
+ }
+
+QComboBox::down-arrow, QSpinBox::down-arrow, QTimeEdit::down-arrow, QDateEdit::down-arrow
+{
+     image: url(:/icons/down_arrow.png);
+     width: 7px;
+     height: 5px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>50</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Trier par:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>120</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton{ 
+background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #565656, stop: 0.1 #525252, stop: 0.5 #4e4e4e, stop: 0.9 #4a4a4a, stop: 1 #464646);
+    border-style: solid;
+    border: 1px solid #1e1e1e;
+    border-radius: 5;
+    padding: 1px 0px 1px 20px;
+
+  color: #ffffff;
+  font-size: 10px;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal
+  }
+QPushButton#pushButton:pressed {
+    background-color: yellow
+}</string>
+   </property>
+   <property name="text">
+    <string>GO!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_db">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>510</y>
+     <width>111</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_cov">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>410</y>
+     <width>91</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

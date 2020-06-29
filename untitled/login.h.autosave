@@ -1,0 +1,17 @@
+#ifndef LOGIN_H
+# define LOGIN_H
+# include "database.h"
+
+class Login : public Database
+{
+public:
+    Login();
+    void open(QString path);
+    void creat_table(QString, int);
+    void add_user();
+    void delete user
+    void close();
+    ~Login();
+};
+
+#endif // LOGIN_H

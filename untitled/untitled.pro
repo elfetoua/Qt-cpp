@@ -1,4 +1,4 @@
-QT       += core gui sql
+QT       += core gui sql printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,17 +16,27 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    login.cpp \
+    country.cpp \
+    database.cpp \
+    datbasewin.cpp \
     main.cpp \
     mainwindow.cpp \
-    secdialog.cpp
+    qcustomplot.cpp \
+    secdialog.cpp \
+    user.cpp
 
 HEADERS += \
     Secdialog.h \
-    login.h \
-    mainwindow.h
+    country.h \
+    database.h \
+    datbasewin.h \
+    includes.h \
+    mainwindow.h \
+    qcustomplot.h \
+    user.h
 
 FORMS += \
+    datbasewin.ui \
     mainwindow.ui \
     secdialog.ui
 
