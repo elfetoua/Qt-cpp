@@ -21,6 +21,7 @@ SOURCES += \
     datbasewin.cpp \
     main.cpp \
     mainwindow.cpp \
+    overload.cpp \
     qcustomplot.cpp \
     secdialog.cpp \
     user.cpp
@@ -32,12 +33,14 @@ HEADERS += \
     datbasewin.h \
     includes.h \
     mainwindow.h \
+    overload.h \
     qcustomplot.h \
     user.h
 
 FORMS += \
     datbasewin.ui \
     mainwindow.ui \
+    overload.ui \
     secdialog.ui
 
 # Default rules for deployment.

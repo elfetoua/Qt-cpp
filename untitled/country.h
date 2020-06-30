@@ -18,6 +18,10 @@ class Country
 public:
      Country();
      void to_database(QJsonArray&);
+     void set_country_info(int cases, int active, int deaths, int recovered);
+     Country *get_info(QString name);
+     QString get_msg();
+     friend Country operator-(Country const& a, Country const& b);
 };
 
 #endif // COUNTRY_H

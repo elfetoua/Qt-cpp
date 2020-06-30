@@ -3,6 +3,7 @@
 #include <vector>
 #include "datbasewin.h"
 #include "database.h"
+#include "overload.h"
 #include <algorithm>
 using namespace std;
 void delay()
@@ -238,6 +239,12 @@ void SecDialog::on_pushButton_world_clicked()
 {
     dbw = new DatbaseWin(this);
     dbw->show();
+}
+
+void SecDialog::on_pushButton_cmp_clicked()
+{
+    win = new Overload(this);
+    win->show();
 }
 
 SecDialog::~SecDialog()

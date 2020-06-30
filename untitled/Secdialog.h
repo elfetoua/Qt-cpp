@@ -3,6 +3,7 @@
 # include "includes.h"
 # include "qcustomplot.h"
 #include "datbasewin.h"
+#include "overload.h"
 #include <QVector>
 
 namespace Ui {
@@ -29,9 +30,12 @@ public slots:
 private slots:
     void on_pushButton_world_clicked();
 
+    void on_pushButton_cmp_clicked();
+
 private:
     Ui::SecDialog *ui;
     DatbaseWin *dbw;
+    Overload *win;
     User active;
     QTimer *timer;
 };
